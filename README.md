@@ -2,7 +2,10 @@
 A script for termux which opens app for you  
 
 # Installation  
-git clone https://github.com/pranav10780/App_open;cd App_open; chmod +x install.sh;./install.sh
+git clone https://github.com/pranav10780/App_open  
+cd App_open  
+chmod +x install.sh  
+./install.sh  
 
 # Advantages  
 well you can start any(most) of the app using this scrpit also it is ver customisable and you don't have to type am start --user 0 -n every time you want to do something  
