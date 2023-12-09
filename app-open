@@ -1,0 +1,40 @@
+#!/data/data/com.termux/files/usr/bin/bash
+if [ "$#" -eq 1 ]; then
+	l="${1,,}"
+	if [ "$l" == "chrome" ] || [ "$l" == "google" ]; then
+		am start --user 0 -n com.android.chrome/com.google.android.apps.chrome.Main;
+
+	elif [ "$l" == "spotify" ] || [ "$l" == "music" ]; then 
+		am start --user 0 -n com.spotify.music/com.spotify.music.MainActivity;
+
+	elif [ "$l" == "whatsapp" ]; then
+		am start --user 0 -n com.whatsapp/com.whatsapp.Main
+
+	elif [ "$l" == "vlc" ]; then
+		am start --user 0 -n org.videolan.vlc/org.videolan.vlc.StartActivity;
+
+	elif [ "$l" == "telegram" ]; then
+		am start --user 0 -n org.telegram.messenger/org.telegram.messenger.DefaultIcon;
+
+	elif [ "$l" == "reddit" ]; then
+		am start --user 0 -n com.reddit.frontpage/launcher.default;
+
+	elif [ "$l" == "photos" ]; then
+		com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity;
+
+	elif [ "$l" == "instagram" ]; then
+		am start --user 0 -n com.instagram.android/com.instagram.android.activity.MainTabActivity;
+
+	elif [ "$l" == "freefire" ]; then
+		am start --user 0 -n com.dts.freefiremax/com.dts.freefireth.FFMainActivity;
+
+	elif [ "$l" == "chess" ]; then
+		am start --user 0 -n com.chess/com.chess.splash.SplashActivity
+
+	else
+		echo "unknown app '$l'";
+	fi
+else
+    echo "Usage: $0 <argument>"
+fi
+
