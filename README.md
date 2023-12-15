@@ -2,13 +2,13 @@
 A script for termux which opens app for you  
 
 # Installation  
-git clone https://github.com/pranav10780/App_open  
+git clone https://github.com/pranav10780/App_open   
 cd App_open  
-chmod +x install.sh  
-./install.sh  
+chmod +x app-open  
+./app-open  
 
 # Advantages  
-well you can start any(most) of the app using this scrpit also it is ver customisable and you don't have to type am start --user 0 -n every time you want to do something  
+well you can start any(most) of the app using this scrpit also it is ver customisable and you don't have to type am start --user 0 -n every time you want to do something.You can also paste this file in the bin directory to use it anywhere in the file system   
 
 # Disadvantages  
 At present it only supports these apps chess freefire telegram whatsapp instagram photos reddit spotify vlc and if you want you can add more but it requires some extra knowledge about coding  
